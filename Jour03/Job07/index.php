@@ -11,16 +11,15 @@
         $str = "Certaines choses changent, et d'autres ne changeront jamais.";  
         $string = "";
         $i = 0;
-        $first_char = $str[0];
-
-        while (isset($str[$i])){
-            $i++;
+        
+        for($i = 0; isset($str[$i]); $i++){
+            if(!isset($str[$i+1])){
+                $string .= $str[0];
+            }else{
+                $string .= $str[$i+1];
+            }
         }
-        
-        $next_char = $str[$i - 1];
-        $string .= $next_char;
-        $string .= $first_char;
-        
+
         echo $string;
     ?>
 </body>
