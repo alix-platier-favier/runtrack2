@@ -4,18 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Runtrack2-J3-job2</title>
+    <title>Runtrack2-J3-job3</title>
 </head>
 <body>
     <?php
-        $str = "Tous ces instants seront perdus dans le temps comme les larmes sous la pluie.";  
-        $string = '';
+        $str = "I'm sorry Dave I'm afraid I can't do that";
+        $voyelle = array("a", "i", "u", "e", "o", "A", "I", "U", "E", "O");
         $i = 0;
 
-            while(isset($str[$i])){
+        while(isset($str[$i])){
+            if (in_array($str[$i], $voyelle)){
                 echo $str[$i];
-                $i += 2;
             }
+            $i++;
+        }
     ?>
 </body>
-</html>

@@ -4,17 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Runtrack2-J3-job2</title>
+    <title>Runtrack2-J3-job6</title>
 </head>
 <body>
     <?php
-        $str = "Tous ces instants seront perdus dans le temps comme les larmes sous la pluie.";  
+        $str = "Les choses que l'on possede finissent par nous posseder";  
         $string = '';
-        $i = 0;
+        $i = -1;
 
             while(isset($str[$i])){
                 echo $str[$i];
-                $i += 2;
+                $i--;
             }
     ?>
 </body>
