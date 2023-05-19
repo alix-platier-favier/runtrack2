@@ -2,6 +2,6 @@
 -- des informations des étudiants qui ont moins de 18 ans.
 
 
-SELECT naissance 
+SELECT * 
 FROM etudiants
-WHERE naissance < 2005;
+WHERE naissance < '2005-01-01';

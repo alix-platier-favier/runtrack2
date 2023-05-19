@@ -2,5 +2,5 @@
 -- l’ensemble des étages.
 
 
-SELECT SUM(superficie)
+SELECT SUM(superficie) AS total
 FROM etage;

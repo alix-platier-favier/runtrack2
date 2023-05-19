@@ -2,5 +2,5 @@
 -- des capacités des salles.
 
 
-SELECT SUM(capacite)
+SELECT SUM(capacite) AS total
 FROM salles;
