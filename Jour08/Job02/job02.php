@@ -7,11 +7,13 @@ $requete = $bdd -> prepare("SELECT nom, capacite FROM salles");
 $requete -> execute();
 $users = $requete -> fetchAll();
 
-echo "<table border = 1>";
+echo "<table border = '1'>";
 echo "<thead>";
 echo "<tr>";
 echo "<th>Nom</th>";
 echo "<th>Capacité</th>";
+echo "</thread>";
+echo "<tbody>";
 
 foreach ($users as $user) {
     echo '<tr>';

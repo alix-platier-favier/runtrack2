@@ -2,7 +2,7 @@
 
 $bdd = new PDO("mysql:host=localhost;dbname=jour07", "root", "");
 
-$requete = $bdd->prepare("SELECT * FROM `salles` ORDER BY `salles`.`capacite` ASC");
+$requete = $bdd->prepare("SELECT * FROM salles ORDER BY `salles`.`capacite` ASC");
 $requete->execute();
 $salles = $requete->fetchAll();
 

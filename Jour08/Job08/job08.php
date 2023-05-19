@@ -2,7 +2,7 @@
 
 $bdd = new PDO("mysql:host=localhost;dbname=Jour07", "root", "");
 
-$requete = $bdd->prepare("SELECT SUM(capacite) as total FROM salles");
+$requete = $bdd->prepare("SELECT SUM(capacite) AS total FROM salles");
 $requete->execute();
 $result = $requete->fetch();
 $total = $result['total'];

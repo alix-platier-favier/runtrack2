@@ -2,7 +2,7 @@
 
 $bdd = new PDO("mysql:host=localhost;dbname=Jour07", "root", "");
 
-$requete = $bdd->prepare("SELECT SUM(superficie) as total FROM etage");
+$requete = $bdd->prepare("SELECT SUM(superficie) AS total FROM etage");
 $requete->execute();
 $result = $requete->fetch();
 $total = $result['total'];

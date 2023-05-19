@@ -7,7 +7,7 @@ $requete = $bdd -> prepare("SELECT * FROM etudiants");
 $requete -> execute();
 $users = $requete -> fetchAll();
 
-echo "<table border = 1>";
+echo "<table border = '1'>";
 echo "<thead>";
 echo "<tr>";
 echo "<th>ID</th>";
@@ -16,6 +16,8 @@ echo "<th>Nom</th>";
 echo "<th>Naissance</th>";
 echo "<th>Sexe</th>";
 echo "<th>Email</th>";
+echo "</thread>";
+echo "<tbody>";
 
 foreach ($users as $user) {
     echo '<tr>';
