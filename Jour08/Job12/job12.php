@@ -1,6 +1,6 @@
 <?php
 
-$bdd = new PDO("mysql:host=localhost;dbname=jour07", "root", "159753");
+$bdd = new PDO("mysql:host=localhost;dbname=jour07", "root", "");
 
 $requete = $bdd->prepare("SELECT prenom, nom, naissance
 FROM etudiants
